@@ -68,6 +68,7 @@ class Methods:
         link_camaradly = wait.until(EC.presence_of_element_located((By.XPATH, Xpaths.xpath_camaradly)))
         link_camaradly.location_once_scrolled_into_view
         self.assertTrue = link_camaradly
+        time.sleep(5)
 
 
     def tearDown(self):
